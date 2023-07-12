@@ -1,0 +1,52 @@
+body {
+    background-color: #05a4c4;
+    font-family: Verdana;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    box-shadow: 20px 50px 10px rgba(0, 0, 0, 0.5);
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px 20px;
+}
+
+button {
+    background-color: #05bbc4;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    display:block;
+    font-family: Verdana;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    display: block;
+    font-family: Verdana;
+    padding: 10px;
+    width: 94%;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.form-control {
+    text-align:left;
+    margin-bottom: 26px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 11px;
+}
