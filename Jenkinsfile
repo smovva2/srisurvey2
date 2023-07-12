@@ -11,14 +11,14 @@ pipeline{
 					sh 'rm -rf *.war'
 					sh 'jar -cvf Student.war -C src/main/webapp .'
 					sh 'docker login -u smovva2 -p ${DOCKERHUB_PASS}'
-					sh 'docker build -t smovva2/student-survey .'
+					sh 'docker build -t smovva2/srisurvey2 .'
 				}
 			}
 		}
 		stage("Pushing image to docker"){
 			steps{
 				script{
-					sh 'docker push smovva2/student-survey'
+					sh 'docker push smovva2/srisurvey2'
 				}
 			}
 		}
@@ -26,7 +26,7 @@ pipeline{
 			steps{
 				script{
 				
-					sh 'kubectl rollout restart deploy devip -n surveyform'
+					sh 'kubectl rollout restart deploy devip2 -n surveyform'
 				}
 			}
 		}
