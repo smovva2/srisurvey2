@@ -26,7 +26,7 @@ pipeline{
 			steps{
 				script{
 				
-					sh 'kubectl rollout restart deploy devip2 -n surveyform'
+					sh 'kubectl rollout restart deploy devip3 -n surveyform1'
 				}
 			}
 		}
